@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: url("../img/texture.jpg"); */
+    background: url("../img/texture-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    height: 3rem;
+    background: #999999;
+    padding: 0.25rem 0;
+    box-shadow: #ffffff 1px 1px 5px;
+    font-size: 1.2rem;
+}
+
+.title {
+    font-family: 'Salsa', cursive;
+    font-size: 1.75rem;
+    padding-left: 1rem;
+}
+
+.navtab ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 1rem;
+}
+
+.navtab ul li {
+    padding-left: 1.35rem;
+    list-style: none;
+}
+
+.navtab ul li a {
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    height: 100vh;
+    background: url("../img/banner.jpg");
+    background-size: cover;
+}
+
+.bannerContent {
+    padding-top: 20vh;
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.bannerText {
+    font-family: 'Holtwood One SC', serif;
+}
+
+#counter {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0rem auto;
+    justify-content: center;
+}
+
+.timer {
+    margin: auto;
+    padding: 3rem 0rem;
+    border: 2px solid #818181ff;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    width: 20%;
+}
+
+.num {
+    font-size: 5rem;
+    font-family: 'Holtwood One SC', serif;
+}
+
+
+#topPad {
+    padding: 3rem;
+}
+
+.sectionHead {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    width: 15rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(249, 125, 125);
+    background-color: rgba(93, 93, 93, 0.491);
+    border: rgba(93, 93, 93, 0.888) solid 3px;
+    border-radius: 3rem;
+}
+
+#about {
+    padding: 1rem;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 3rem;
+}
+
+.aboutContent img {
+    width: 30%;
+    border-radius: 0.5rem;
+}
+
+.aboutText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+    border-radius: 1rem;
+}
+
+.aboutQue {
+    font-size: 3rem;
+    font-family: 'Rozha One', serif;
+}
+
+.aboutDesc {
+    font-size: 1.2rem;
+    margin-top: 0.75rem;
+    font-weight: 500;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+
+.statsboard {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/statsBack.jpg") center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+div.stats-value {
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stats-value div {
+    align-self: center;
+}
+
+.stats-item {
+    text-align: center;
+    color: #ffffffbe;
+    padding: 20px 0px;
+    backdrop-filter: blur(5px);
+}
+
+.stats-text {
+    font-size: 1.5rem;
+}
+
+.newEvent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #33333377;
+}
+
+.newEvent h2 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: #000000 2px 2px 2px;
+}
+
+#container {
+    color: white;
+    margin: auto;
+    width: 90vw;
+    height: 8rem;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0px);
+    text-shadow: #000000 2px 2px 2px;
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    user-select: none;
+}
+
+button.register {
+    margin: 2rem;
+    padding: 0.5rem 2rem;
+    font-family: 'Nanum Myeongjo', serif;
+    border-radius: 1rem;
+    background-color: #74a9ff;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color ease-in-out 250ms, color ease-in-out 250ms;
+}
+
+button.register:hover {
+    background-color: #ffffff;
+    color: #74a9ff;
+}
+
+.sponsers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sponsers img {
+    margin: 2rem;
+    height: 8rem;
+    border-radius: 50%;
+
+}
+
+.contactList {
+    /* width: 80%; */
+    margin: 2rem auto;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+    font-size: 1.5rem;
+    border: 2rem;
+}
+
+.contactList li {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+.contactList i {
+    padding-right: 1rem;
+}
+
+.mail {
+    color: #FF2C00;
+}
+
+.fb {
+    color: #1775F1;
+}
+
+.twitter {
+    color: #000000;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    font-size: 1.25rem;
+    height: 4rem;
+    text-align: center;
+    color: white;
+}
+
+footer .developDetail {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.developDetail a {
+    color: white;
+}
